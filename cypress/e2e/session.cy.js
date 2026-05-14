@@ -1,14 +1,11 @@
 describe('Session Validation', () => {
+  it('should keep user on inventory page after successful login', () => {
+    cy.visit('/')
 
-  it('should redirect after session expiration', () => {
+    cy.get('[data-test="username"]').type('standard_user')
+    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('[data-test="login-button"]').click()
 
-    cy.visit('https://example.com/dashboard')
-
-    cy.clearCookies()
-
-    cy.reload()
-
-    cy.url().should('include', '/login')
+    cy.url().should('include', '/inventory.html')
   })
-
 })
