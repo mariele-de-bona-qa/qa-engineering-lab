@@ -1,0 +1,30 @@
+{
+  "name": "qa-engineering-lab",
+  "version": "1.0.0",
+  "description": "QA Engineering Lab for automation, API and performance testing",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run",
+    "k6:smoke": "k6 run performance/smoke/smoke-test.js",
+    "k6:load": "k6 run performance/load/load-test.js",
+    "k6:stress": "k6 run performance/stress/stress-test.js",
+    "k6:spike": "k6 run performance/spike/spike-test.js"
+  },
+  "keywords": [
+    "qa",
+    "automation",
+    "cypress",
+    "postman",
+    "k6",
+    "testing",
+    "quality-engineering"
+  ],
+  "author": "Mariele De Bona",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "cypress": "^14.0.0"
+  }
+}
