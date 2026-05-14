@@ -48,6 +48,26 @@ qa-engineering-lab/
 ├── ci-cd/
 └── .github/workflows/
 ```
+---
+
+# 🏗️ QA Architecture
+
+## Quality Engineering Architecture
+
+![QA Architecture](architecture/qa-architecture.png)
+
+---
+
+# ⚙️ CI/CD Pipeline Flow
+
+![Pipeline Flow](architecture/pipeline-flow.png)
+
+---
+
+# 🧪 Test Strategy Diagram
+
+![Test Strategy](architecture/test-strategy-diagram.png)
+
 
 ---
 
