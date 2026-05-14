@@ -12,22 +12,10 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "https://reqres.in/api/users?page=2",
+          "raw": "https://jsonplaceholder.typicode.com/users",
           "protocol": "https",
-          "host": [
-            "reqres",
-            "in"
-          ],
-          "path": [
-            "api",
-            "users"
-          ],
-          "query": [
-            {
-              "key": "page",
-              "value": "2"
-            }
-          ]
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["users"]
         }
       },
       "event": [
@@ -36,11 +24,17 @@
           "script": {
             "exec": [
               "pm.test('Status code is 200', function () {",
-              "    pm.response.to.have.status(200);",
+              "  pm.response.to.have.status(200);",
               "});",
               "",
               "pm.test('Response time is less than 1000ms', function () {",
-              "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+              "  pm.expect(pm.response.responseTime).to.be.below(1000);",
+              "});",
+              "",
+              "pm.test('Response contains users', function () {",
+              "  const jsonData = pm.response.json();",
+              "  pm.expect(jsonData).to.be.an('array');",
+              "  pm.expect(jsonData.length).to.be.above(0);",
               "});"
             ],
             "type": "text/javascript"
