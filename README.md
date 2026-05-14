@@ -140,7 +140,62 @@ Pipelines automatizados utilizando GitHub Actions para execução contínua dos 
 * Performance Tests
 
 ---
+# ▶️ How to Run
 
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Run Cypress Tests
+
+```bash
+npm run cy:run
+```
+
+---
+
+## Open Cypress UI
+
+```bash
+npm run cy:open
+```
+
+---
+
+## Run K6 Smoke Tests
+
+```bash
+npm run k6:smoke
+```
+
+---
+
+## Run K6 Load Tests
+
+```bash
+npm run k6:load
+```
+
+---
+
+## Run K6 Stress Tests
+
+```bash
+npm run k6:stress
+```
+
+---
+
+## Run K6 Spike Tests
+
+```bash
+npm run k6:spike
+```
+---
 # 📊 Quality Engineering
 
 Este laboratório segue conceitos modernos de Quality Engineering:
