@@ -1,7 +1,5 @@
 ![Cypress Tests](https://github.com/mariele-de-bona-qa/qa-engineering-lab/actions/workflows/cypress-tests.yml/badge.svg)
-
 ![API Tests](https://github.com/mariele-de-bona-qa/qa-engineering-lab/actions/workflows/api-tests.yml/badge.svg)
-
 ![Performance Tests](https://github.com/mariele-de-bona-qa/qa-engineering-lab/actions/workflows/performance-tests.yml/badge.svg)
 
 # QA Engineering Lab 🚀
