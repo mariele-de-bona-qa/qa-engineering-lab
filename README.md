@@ -4,21 +4,6 @@
 
 # 🚀 QA Engineering Lab
 
-<p align="center">
-  <img src="./architecture/pipeline-flow.png" width="900"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Cypress-E2E-brightgreen"/>
-  <img src="https://img.shields.io/badge/Postman-API-orange"/>
-  <img src="https://img.shields.io/badge/K6-Performance-blue"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-CI/CD-black"/>
-  <img src="https://img.shields.io/badge/Power_BI-Dashboard-yellow"/>
-  <img src="https://img.shields.io/badge/Quality-Engineering-purple"/>
-</p>
-
----
-
 # 📌 About The Project
 
 QA Engineering Lab is a practical Quality Engineering ecosystem focused on:
