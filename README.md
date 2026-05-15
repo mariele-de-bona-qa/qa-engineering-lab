@@ -47,26 +47,6 @@ This architecture demonstrates how automation, APIs, performance testing and CI/
   <img src="./architecture/pipeline-flow.png" width="900"/>
 </p>
 
-## Automated Pipeline
-
-```txt
-Code Push
-   ↓
-GitHub Actions
-   ↓
-API Tests (Postman/Newman)
-   ↓
-E2E Tests (Cypress)
-   ↓
-Performance Tests (K6)
-   ↓
-Reports Generation
-   ↓
-Quality Gate
-   ↓
-Artifacts & Dashboards
-```
-
 ---
 
 # 🧪 Test Strategy Diagram
