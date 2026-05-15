@@ -2,145 +2,278 @@
 ![API Tests](https://github.com/mariele-de-bona-qa/qa-engineering-lab/actions/workflows/api-tests.yml/badge.svg)
 ![Performance Tests](https://github.com/mariele-de-bona-qa/qa-engineering-lab/actions/workflows/performance-tests.yml/badge.svg)
 
-# QA Engineering Lab 🚀
+# 🚀 QA Engineering Lab
 
-Laboratório prático de Engenharia de Qualidade focado em automação de testes, APIs, performance testing e integração contínua.
+<p align="center">
+  <img src="./architecture/pipeline-flow.png" width="900"/>
+</p>
 
-Este repositório foi criado para consolidar estudos, experimentos, boas práticas e projetos relacionados à Quality Engineering moderna, utilizando ferramentas amplamente adotadas no mercado.
-
----
-
-# 🎯 Objetivos
-
-* Construir automações escaláveis e reutilizáveis
-* Demonstrar boas práticas de QA moderno
-* Validar APIs e fluxos críticos de negócio
-* Implementar testes de performance
-* Estruturar pipelines de CI/CD
-* Evoluir continuamente em Quality Engineering
+<p align="center">
+  <img src="https://img.shields.io/badge/Cypress-E2E-brightgreen"/>
+  <img src="https://img.shields.io/badge/Postman-API-orange"/>
+  <img src="https://img.shields.io/badge/K6-Performance-blue"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-CI/CD-black"/>
+  <img src="https://img.shields.io/badge/Power_BI-Dashboard-yellow"/>
+  <img src="https://img.shields.io/badge/Quality-Engineering-purple"/>
+</p>
 
 ---
 
-# ⚡ Stack Principal
+# 📌 About The Project
 
-* Cypress
-* Postman
-* K6
-* JavaScript
-* Azure DevOps
-* GitHub Actions
-* SQL
-* Power BI
+QA Engineering Lab is a practical Quality Engineering ecosystem focused on:
+
+- End-to-End Test Automation
+- API Validation
+- Performance Engineering
+- CI/CD Quality Pipelines
+- Reporting & Observability
+- Scalable QA Architecture
+
+This repository centralizes studies, experiments, best practices and real-world quality engineering strategies using modern tools adopted by the market.
 
 ---
 
-# 📂 Estrutura do Projeto
+# 🎯 Project Goals
 
-```bash
-qa-engineering-lab/
-│
-├── docs/
-├── architecture/
-├── cypress/
-├── api/
-├── performance/
-├── flaky-tests/
-├── snippets/
-├── ci-cd/
-└── .github/workflows/
-```
+- Build scalable and reusable test automation
+- Demonstrate modern QA best practices
+- Validate critical APIs and business flows
+- Implement performance testing strategies
+- Structure CI/CD quality pipelines
+- Improve software reliability and observability
+- Apply Quality Engineering concepts in real scenarios
+
 ---
 
 # 🏗️ QA Architecture
 
 ## Quality Engineering Architecture
 
-![QA Architecture](architecture/qa-architecture.png)
+<p align="center">
+  <img src="./architecture/qa-architecture.png" width="900"/>
+</p>
+
+This architecture demonstrates how automation, APIs, performance testing and CI/CD integrate into a continuous quality ecosystem.
 
 ---
 
 # ⚙️ CI/CD Pipeline Flow
 
-![Pipeline Flow](architecture/pipeline-flow.png)
+<p align="center">
+  <img src="./architecture/pipeline-flow.png" width="900"/>
+</p>
+
+## Automated Pipeline
+
+```txt
+Code Push
+   ↓
+GitHub Actions
+   ↓
+API Tests (Postman/Newman)
+   ↓
+E2E Tests (Cypress)
+   ↓
+Performance Tests (K6)
+   ↓
+Reports Generation
+   ↓
+Quality Gate
+   ↓
+Artifacts & Dashboards
+```
 
 ---
 
 # 🧪 Test Strategy Diagram
 
-![Test Strategy](architecture/test-strategy-diagram.png)
+<p align="center">
+  <img src="./architecture/test-strategy-diagram.png" width="900"/>
+</p>
 
+### Testing Strategy
+
+- Shift Left Testing
+- Continuous Testing
+- Risk-Based Testing
+- Performance Validation
+- Automated Quality Gates
+- Observability & Metrics
 
 ---
 
-# 🧪 Automação E2E
+# ⚡ Main Stack
 
-Estrutura de automação utilizando Cypress com foco em:
+## QA & Automation
 
-* Page Objects
-* Fixtures
-* Custom Commands
-* API Intercepts
-* Session Handling
-* Retry Strategies
-* Reports automatizados
+- Cypress
+- Postman
+- Newman
+- K6
+- JavaScript
 
-### Cenários implementados
+## CI/CD & DevOps
 
-* Login
-* Cadastro
-* Checkout
-* Sessão expirada
-* Fluxos críticos E2E
+- GitHub Actions
+- Azure DevOps
+
+## Metrics & Observability
+
+- Power BI
+- Mochawesome
+- Allure Reports
+
+## Data & Backend
+
+- SQL
+- JSON
+
+---
+
+# 📂 Project Structure
+
+```bash
+qa-engineering-lab/
+│
+├── architecture/
+│
+├── cypress/
+│   ├── e2e/
+│   ├── fixtures/
+│   ├── support/
+│   ├── reports/
+│   └── screenshots/
+│
+├── api/
+│   ├── collections/
+│   ├── environments/
+│   └── reports/
+│
+├── performance/
+│   ├── smoke/
+│   ├── load/
+│   ├── stress/
+│   ├── spike/
+│   └── reports/
+│
+├── docs/
+│
+├── flaky-tests/
+│
+├── ci-cd/
+│
+└── .github/
+    └── workflows/
+```
+
+---
+
+# 🧪 End-to-End Automation
+
+Automation structure using Cypress focused on scalability and maintainability.
+
+## Features
+
+- Page Objects
+- Fixtures
+- Custom Commands
+- API Intercepts
+- Session Handling
+- Retry Strategies
+- Automated Reports
+- Screenshots & Videos
+
+## Scenarios Implemented
+
+- Login
+- User Registration
+- Checkout
+- Expired Session
+- Critical E2E Flows
 
 ---
 
 # 🔌 API Testing
 
-Estratégias de testes de APIs REST utilizando Postman e Newman.
+REST API testing strategies using Postman and Newman.
 
-### Cobertura
+## Coverage
 
-* Validação de status code
-* JSON Schema Validation
-* Autenticação via token
-* Variáveis de ambiente
-* Fluxos críticos
-* Reports automatizados
+- Status Code Validation
+- JSON Schema Validation
+- Authentication via Token
+- Environment Variables
+- Critical Business Flows
+- Automated Reports
+
+## CI Integration
+
+API tests are automatically executed through GitHub Actions pipelines.
 
 ---
 
 # 🚀 Performance Testing
 
-Testes de performance utilizando K6.
+Performance testing strategy using K6.
 
-### Tipos de testes
+## Test Types
 
-* Smoke Tests
-* Load Tests
-* Stress Tests
-* Spike Tests
+- Smoke Tests
+- Load Tests
+- Stress Tests
+- Spike Tests
 
-### Métricas analisadas
+## Metrics Analyzed
 
-* Response Time
-* Throughput
-* Error Rate
-* Thresholds
-* Performance Bottlenecks
+- Response Time
+- Throughput
+- Error Rate
+- Thresholds
+- Performance Bottlenecks
 
 ---
 
 # ⚙️ CI/CD
 
-Pipelines automatizados utilizando GitHub Actions para execução contínua dos testes.
+Automated quality pipelines using GitHub Actions.
 
-### Pipelines
+## Workflows
 
-* Cypress Tests
-* API Tests
-* Performance Tests
+- Cypress Tests
+- API Tests
+- Performance Tests
+
+## Goals
+
+- Continuous Quality
+- Fast Feedback
+- Automated Validation
+- Scalable Testing Pipelines
 
 ---
+
+# 📊 Reports & Observability
+
+This project includes quality reports and execution artifacts for better visibility and analysis.
+
+## Reports
+
+- Cypress Reports
+- Newman Reports
+- K6 Metrics
+- Execution Logs
+- Failure Analysis
+
+## Observability
+
+- Pipeline Visibility
+- Performance Metrics
+- Quality Indicators
+- Continuous Monitoring
+
+---
+
 # ▶️ How to Run
 
 ## Install Dependencies
@@ -163,6 +296,14 @@ npm run cy:run
 
 ```bash
 npm run cy:open
+```
+
+---
+
+## Run API Tests
+
+```bash
+npm run api:test
 ```
 
 ---
@@ -196,43 +337,71 @@ npm run k6:stress
 ```bash
 npm run k6:spike
 ```
----
-# 📊 Quality Engineering
-
-Este laboratório segue conceitos modernos de Quality Engineering:
-
-* Continuous Testing
-* Shift Left Testing
-* Quality Metrics
-* DevOps Culture
-* Test Automation Strategy
-* Scalable QA Architecture
 
 ---
 
-# 📈 Próximas Implementações
+# 📈 Quality Engineering Principles
 
-* Allure Reports
-* Docker Integration
-* Visual Testing
-* Contract Testing
-* Accessibility Testing
-* Parallel Execution
-* Dashboard de métricas QA
+This lab follows modern Quality Engineering concepts:
+
+- Continuous Testing
+- Shift Left Testing
+- Test Automation Strategy
+- DevOps Culture
+- Quality Metrics
+- Scalable QA Architecture
+- Observability
+- Continuous Feedback
+
+---
+
+# 🔥 Future Improvements
+
+- Allure Reports
+- Docker Integration
+- Visual Testing
+- Contract Testing
+- Accessibility Testing
+- Parallel Execution
+- Grafana Dashboards
+- AI-generated Test Scenarios
+- AI-powered Failure Analysis
+- Flaky Test Detection
+
+---
+
+# 📸 Future Visual Evidence
+
+Planned additions:
+
+- GIFs of Cypress execution
+- CI/CD workflow recordings
+- K6 dashboards
+- Automated reports screenshots
+- Quality metrics dashboards
 
 ---
 
 # 👩‍💻 Author
 
-## Mariele De Bona
+# Mariele De Bona
 
-QA Engineer focada em:
+QA Engineer focused on:
 
-* Test Automation
-* API Testing
-* Performance Engineering
-* Continuous Quality
+- Test Automation
+- API Testing
+- Performance Engineering
+- Continuous Quality
+- Quality Architecture
 
-### 🔗 LinkedIn
+---
+
+# 🔗 Connect With Me
+
+### LinkedIn
 
 https://www.linkedin.com/in/mariele-de-bona-qa
+
+### GitHub
+
+https://github.com/mariele-de-bona-qa
