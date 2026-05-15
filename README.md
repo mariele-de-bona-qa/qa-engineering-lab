@@ -4,8 +4,6 @@
 
 # 🚀 QA Engineering Lab
 
-# 📌 About The Project
-
 QA Engineering Lab is a practical Quality Engineering ecosystem focused on:
 
 - End-to-End Test Automation
